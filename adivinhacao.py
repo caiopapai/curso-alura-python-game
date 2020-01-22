@@ -9,7 +9,7 @@ for rodada in range(1, total_de_tentativas + 1):
     chute = int(chute)
 
     if (chute < 1 or chute > 100):
-        print("O numero", chute, "é inválido, você deve digitar um numero entre 1 e 100")
+        print('O numero', chute, 'é inválido, você deve digitar um numero entre 1 e 100')
         continue
 
     acertou = chute == numero_secreto
