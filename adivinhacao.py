@@ -5,11 +5,17 @@ numero_secreto = random.randrange(1,100)
 
 print("Qual é o nivel de dificuldade?")
 print("(1)-Fácil (2)-Médio (3)-Difícil")
-nivel = input("Defina o nível: ")
-nivel = int(nivel)
 
-if nivel > 3 or nivel < 1:
-    print("Nivel inválido")
+escolha = True
+while(escolha):
+    nivel = input("Defina o nível: ")
+    nivel = int(nivel)
+    
+    if nivel > 3 or nivel < 1:
+        print("Nivel inválido")
+    else:
+        escolha = False
+
 
 if nivel == 1:
     total_de_tentativas = 10
