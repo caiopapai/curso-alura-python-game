@@ -1,6 +1,6 @@
 import random
 
-numero_secreto = round(random.random() * 100) 
+numero_secreto = random.randrange(1,100) 
 total_de_tentativas = 3
 
 for rodada in range(1, total_de_tentativas + 1):
